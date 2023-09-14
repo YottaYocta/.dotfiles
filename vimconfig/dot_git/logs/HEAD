@@ -1,0 +1,4 @@
+0000000000000000000000000000000000000000 dab47556b31df468ee7adcb676f786e3a155c021 YottaYocta <chubbean.rq@gmail.com> 1638142247 -0600	clone: from https://github.com/YottaYocta/vimconfig.git
+dab47556b31df468ee7adcb676f786e3a155c021 dab47556b31df468ee7adcb676f786e3a155c021 YottaYocta <chubbean.rq@gmail.com> 1641792943 -0600	reset: moving to HEAD
+dab47556b31df468ee7adcb676f786e3a155c021 8c94863950be4ecfabefc5829279c938b3e645dd YottaYocta <chubbean.rq@gmail.com> 1641792948 -0600	pull origin master: Fast-forward
+8c94863950be4ecfabefc5829279c938b3e645dd 460cf04784e770bb8f82eac4cd5b5b5279f55763 YottaYocta <chubbean.rq@gmail.com> 1641793104 -0600	commit: added asterisk seperator template

@@ -1,0 +1,28 @@
+import java.io.*;
+import java.util.*;
+public class Runner
+{
+  public static BufferedReader br;
+  public static StreamTokenizer st;
+  public static PrintWriter pw;
+  public static int nextInt() throws IOException
+  {
+    st.nextToken();
+    return (int) st.nval;
+  }
+  public static String nextLine() throws IOException
+  {
+    return br.readLine();
+  }
+  public static void main(String[] args) throws IOException
+  {
+
+    // Change File Names //
+
+    br = new BufferedReader(new FileReader("input.in")); 
+    st = new StreamTokenizer(br);
+    pw = new PrintWriter(new FileWriter("input.out"));
+    
+    pw.close();
+  }
+}

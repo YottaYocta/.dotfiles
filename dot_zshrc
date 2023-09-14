@@ -1,0 +1,6 @@
+PROMPT="%F{magenta}%B%1d%b%f >> "
+export PATH="/usr/local/sbin:$PATH"
+export EDITOR="vim"
+export PATH="/usr/local/anaconda3/bin:$PATH"
+
+alias ls="ls -a"

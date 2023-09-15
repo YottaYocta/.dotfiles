@@ -12,7 +12,7 @@ bar=(
   margin=70
   corner_radius=19
   border_width=1
-  topmost=on
+  topmost=window
 )
 
 # Configure the bar using the defined configuration
@@ -20,7 +20,6 @@ sketchybar --bar "${bar[@]}"
 
 # Define default item configuration
 default=(
-  icon.font="Hack Nerd Font:Bold:17.0"
   icon.color=0xffffffff
   label.font="Hack Nerd Font:Bold:14.0"
   label.color=0xffffffff
@@ -38,7 +37,7 @@ sketchybar --default "${default[@]}"
 # Adding left items
 sketchybar --add item clock left \
   --set clock update_freq=1 \
-  icon=􀐬 \
+  icon=🕙 \
   script="$PLUGIN_DIR/clock.sh" \
 
 sketchybar --add item wifi left \

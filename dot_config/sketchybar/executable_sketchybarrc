@@ -1,0 +1,58 @@
+#!/bin/bash
+
+PLUGIN_DIR="$CONFIG_DIR/plugins"
+
+# Define bar configuration
+bar=(
+  color=0xff2a2c38
+  border_color=0x33ffffff
+  shadow=true
+  height=48
+  y_offset=20
+  margin=70
+  corner_radius=19
+  border_width=1
+  topmost=on
+)
+
+# Configure the bar using the defined configuration
+sketchybar --bar "${bar[@]}"
+
+# Define default item configuration
+default=(
+  icon.font="Hack Nerd Font:Bold:17.0"
+  icon.color=0xffffffff
+  label.font="Hack Nerd Font:Bold:14.0"
+  label.color=0xffffffff
+  padding_left=10
+  padding_right=10
+  label.padding_left=10
+  label.padding_right=10
+  icon.padding_left=4
+  icon.padding_right=4
+)
+
+# Configure default item settings
+sketchybar --default "${default[@]}"
+
+# Adding left items
+sketchybar --add item clock left \
+  --set clock update_freq=1 \
+  icon=􀐬 \
+  script="$PLUGIN_DIR/clock.sh" \
+
+sketchybar --add item wifi left \
+  --set wifi script="$PLUGIN_DIR/wifi.sh" update_freq=5 \
+  --subscribe wifi wifi_change \
+
+sketchybar --add item volume left \
+  --set volume script="$PLUGIN_DIR/volume.sh" \
+  --subscribe volume volume_change \
+
+sketchybar --add item battery left \
+  --set battery script="$PLUGIN_DIR/battery.sh" update_freq=120 \
+  --subscribe battery system_woke power_source_change
+
+# Update the bar
+sketchybar --update
+

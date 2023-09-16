@@ -14,6 +14,7 @@ brew install sketchybar
 
 # Start Sketchybar as a service
 brew services start sketchybar
+sketchybar --reload
 
 # Change the shell to Zsh
 chsh -s /bin/zsh

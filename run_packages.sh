@@ -6,8 +6,10 @@ if ! command -v brew &> /dev/null; then
 fi
 
 # Install applications using Homebrew
-brew install --cask firefox iterm2
+brew tap homebrew/cask-fonts
 brew tap FelixKratz/formulae
+
+brew install --cask firefox iterm2 amethyst font-hack-nerd-font font-monoid
 brew install sketchybar
 
 # Start Sketchybar as a service

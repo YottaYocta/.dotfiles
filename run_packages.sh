@@ -6,7 +6,7 @@ if ! command -v brew &> /dev/null; then
 fi
 
 # Install applications using Homebrew
-brew install --cask blender musescore firefox iterm2
+brew install --cask firefox iterm2
 brew tap FelixKratz/formulae
 brew install sketchybar
 

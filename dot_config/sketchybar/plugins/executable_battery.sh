@@ -9,7 +9,7 @@ CHARGING=$(echo "$BATTERY_INFO" | grep -q 'AC Power' && echo "Charging" || echo 
 
 
 if [[ "$PERCENTAGE" == "" ]]; then
-  PERCENTAGE=$(echo "100")
+  PERCENTAGE=$(echo "100%")
 fi
 
 case ${PERCENTAGE} in

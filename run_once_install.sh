@@ -11,7 +11,11 @@ brew tap FelixKratz/formulae
 
 brew install --cask firefox iterm2 amethyst font-hack-nerd-font font-monoid
 brew install --cask homebrew/cask-fonts/font-monoid
-brew install sketchybar
+brew install python java git-lfs sketchybar
+
+# Symlink java
+sudo ln -sfn /opt/homebrew/opt/openjdk/libexec/openjdk.jdk \
+     /Library/Java/JavaVirtualMachines/openjdk.jdk
 
 # Start Sketchybar as a service
 brew services start sketchybar

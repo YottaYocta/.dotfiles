@@ -11,7 +11,8 @@ brew tap FelixKratz/formulae
 
 brew install --cask firefox iterm2 amethyst font-hack-nerd-font font-monoid
 brew install --cask homebrew/cask-fonts/font-monoid
-brew install python java git-lfs sketchybar
+brew install python java git-lfs nvm sketchybar
+source $(brew --prefix nvm)/nvm.sh
 
 # Symlink java
 sudo ln -sfn /opt/homebrew/opt/openjdk/libexec/openjdk.jdk \

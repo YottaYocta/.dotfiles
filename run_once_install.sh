@@ -30,5 +30,7 @@ sketchybar --reload
 # Change the shell to Zsh
 chsh -s /bin/zsh
 
+echo 'export PATH="$HOME/bin:$PATH"' >> ~/.zshrc
+
 echo "Setup complete! Please restart your terminal for changes to take effect."
 

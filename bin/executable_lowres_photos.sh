@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Iterate over all .jpg files in the current directory
-for file in *.JPG; do
+for file in *.jpg *.jpeg *.png *.JPG *.JPEG *.PNG; do
     # Check if file exists (in case there are no matching files)
     [ -e "$file" ] || continue
 

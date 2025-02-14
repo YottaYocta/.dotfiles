@@ -4,3 +4,12 @@ export EDITOR="vim"
 export PATH="/usr/local/anaconda3/bin:$PATH"
 echo "source $(brew --prefix nvm)/nvm.sh" >> ~/.profile
 alias ls="ls -a"
+export PATH="$HOME/bin:$PATH"
+source /opt/homebrew/opt/chruby/share/chruby/chruby.sh
+source /opt/homebrew/opt/chruby/share/chruby/auto.sh
+chruby ruby-3.3.5 # run chruby to see actual version
+export PYENV_ROOT="$HOME/.pyenv"
+[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
+export PATH="$PATH:$HOME/Library/Application Support/itch/apps/butler"

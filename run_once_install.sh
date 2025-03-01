@@ -11,7 +11,7 @@ brew tap FelixKratz/formulae
 
 brew install --cask firefox iterm2 amethyst font-hack-nerd-font font-monoid
 brew install --cask homebrew/cask-fonts/font-monoid
-brew install python java git-lfs node sketchybar
+brew install python java git-lfs node coreutils git-quick-stats
 
 # Update npm
 npm update -g npm
@@ -22,10 +22,6 @@ source $(brew --prefix nvm)/nvm.sh
 sudo ln -sfn /opt/homebrew/opt/openjdk/libexec/openjdk.jdk \
      /Library/Java/JavaVirtualMachines/openjdk.jdk
 
-
-# Start Sketchybar as a service
-brew services start sketchybar
-sketchybar --reload
 
 # Change the shell to Zsh
 chsh -s /bin/zsh
